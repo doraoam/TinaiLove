@@ -2,5 +2,13 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express-session": "^1.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+  "start": "concurrently \"cd server && node server.js\" \"cd client && npm start\"",
+  "start-server": "cd server && node server.js",
+  "start-client": "cd client && npm start"
   }
 }
